@@ -1,6 +1,6 @@
 def toDoEntity(item) -> dict:
   return {
-    "id": str(item["_id"]),
+    "_id": str(item["_id"]),
     "title": item["title"],
     "completed": item["completed"],
   }
