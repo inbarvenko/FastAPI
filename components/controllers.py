@@ -3,7 +3,7 @@ import math
 from db.connection import collection
 
 class ToDoControllers:
-    def find_with_filer_and_pagination(filter='all', currentPage = 1):
+    def find_with_filer_and_pagination(filter:str = 'all', currentPage:int = 1):
       try:
         if (filter == 'all' or not filter):
           filteredObject = {}

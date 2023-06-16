@@ -2,6 +2,7 @@ from pydantic import BaseModel
 
 
 # Model of request
-class toDoListModel(BaseModel):
+class ToDoListModel(BaseModel):
+    _id: str
     title: str
     completed: bool

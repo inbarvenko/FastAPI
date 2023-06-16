@@ -1,4 +1,6 @@
-def toDoEntity(item) -> dict:
+from db.model import ToDoListModel
+
+def toDoEntity(item: ToDoListModel) -> dict:
   return {
     "_id": str(item["_id"]),
     "title": item["title"],
